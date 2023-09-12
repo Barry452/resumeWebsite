@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
+  const icons =[
+    "./skill/1.png",
+    "./skill/2.png",
+    "./skill/3.png",
+    "./skill/4.jpg",
+    "./skill/4.png",
+    "./skill/5.png",
+    "./skill/6.png",
+    "./skill/7.png",
+    "./skill/8.png",
+    "./skill/9.png",
+    "./skill/10.png",
+    "./skill/11.png",
+    "./skill/12.png",
+  ];
+  const iconsStyle = {
+    position: "relative",
+    marginTop: "auto", /* Push the image to the bottom */
+    textAlign: "center", /* Center the image horizontally */
+    height: "100px",
+    paddingRight: "20px",
+    paddingTop: "10px"
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ fontSize: 30, color: "#353535", fontWeight: 'bold' }} align="center">Skill</div>
+      <div className="container"> {/* Add the Bootstrap container i wan everything start from left to right wrap when there more go down*/}
+      <div class="d-flex flex-row flex-wrap">
+      {icons.map((icon, index) => (
+                    <img key={index} alt="Icon" src={icon} style={iconsStyle} />
+                  ))}
+
+        </div>
+
+
+    </div>
     </div>
   );
 }
