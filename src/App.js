@@ -16,6 +16,9 @@ function App() {
     "./skill/10.png",
     "./skill/11.png",
     "./skill/12.png",
+    "./skill/13.png",
+    "./skill/14.png",
+    "./skill/15.png",
   ];
   const iconsStyle = {
     position: "relative",

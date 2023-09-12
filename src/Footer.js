@@ -3,9 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Foot({ className }) {
+  const footerStyle = {
+    boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.1)', // Add the box shadow style here
+  };
   return (
-    <div className={className} id="contact">
-        <footer className="footer text-center">
+    <div className={className} id="contact" style={footerStyle}>
+        <footer className="footer text-center" >
         <div align="center">
             <div style={{ fontSize: 30, color: "#353535", fontWeight: 'bold' }}>Contact</div>
             <div style={{ fontSize: 15, color: "grey" }}>Contact me at <a href="mailto:barrykhaw@outlook.com">barrykhaw@outlook.com</a> or connect with me on <a href="https://www.linkedin.com/in/barry-khaw-32850a236/">LinkedIn</a></div>
